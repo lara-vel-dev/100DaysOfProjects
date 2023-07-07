@@ -1,0 +1,24 @@
+{
+  "name": "day01",
+  "version": "1.0.0",
+  "description": "Day 01: Hello World!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lara-vel-dev/100DaysOfProjects.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Daniela Lara Lozano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lara-vel-dev/100DaysOfProjects/issues"
+  },
+  "homepage": "https://github.com/lara-vel-dev/100DaysOfProjects#readme"
+}
