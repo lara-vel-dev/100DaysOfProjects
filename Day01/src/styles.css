@@ -6,8 +6,8 @@
 }
 
 html {
-    font-size: 62.5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -34,41 +34,65 @@ body {
 }
 
 .terminal_header__btns {
-    position: relative;
-    left: 10px;
-    top: 30%;
-    opacity: 0.7;
-    display: flex;
-    gap: 10px;
+  position: relative;
+  left: 10px;
+  top: 30%;
+  opacity: 0.7;
+  display: flex;
+  gap: 10px;
 }
 
 .terminal_header__btns:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
 }
 
 .close {
-    background-color: #F53C22;
+  background-color: #f53c22;
 }
 .min {
-    background-color: #F5E522;
+  background-color: #f5e522;
 }
 .max {
-    background-color: #4FF522;
+  background-color: #4ff522;
 }
 
 h2 {
-    position: relative;
-    left: 40%;
-    top: -5px;
+  position: relative;
+  left: 40%;
+  top: -5px;
 }
 
 .content {
-    margin-top: 55px;
-    font-size: 2rem;
+  color: #fc9595;
+  margin-top: 55px;
+  margin-left: 15px;
+  font-size: 2rem;
+}
+
+.hello-world {
+    margin: 20px 15px;
+}
+
+.comments {
+  color: #d5d5d5;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.text {
+    color: #D59FFF;
+}
+
+.parenthesis {
+    color: #d5d5d5;
+}
+
+.output {
+    color: #1EDEA1;
 }
