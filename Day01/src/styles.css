@@ -15,14 +15,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
+}
+
+h1 {
+    visibility: hidden;
 }
 
 .terminal {
   color: #fff;
-  background-color: #023558;
+  background-color: #092F55;
   width: 60%;
-  height: 50%;
+  height: 53%;
   position: relative;
 }
 
@@ -76,7 +81,7 @@ h2 {
 }
 
 .hello-world {
-    margin: 20px 15px;
+  margin: 20px 15px;
 }
 
 .comments {
@@ -86,13 +91,32 @@ h2 {
 }
 
 .text {
-    color: #D59FFF;
+  color: #d59fff;
 }
 
 .parenthesis {
-    color: #d5d5d5;
+  color: #d5d5d5;
 }
 
 .output {
-    color: #1EDEA1;
+  color: #1edea1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  .terminal {
+    width: 90%;
+    height: 70%;
+  }
+
+  h1 {
+    position: relative;
+    visibility: visible;
+    top: -20px;
+  }
+
+  h2 {
+    visibility: hidden;
+  }
+
 }
