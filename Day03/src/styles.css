@@ -23,15 +23,16 @@ header {
   width: 100%;
   padding: 30px 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   z-index: 100;
 }
 
-header .logo {
+.logo {
   font-size: 3.2rem;
   color: #359381;
   pointer-events: none;
+  margin-right: 270px;
 }
 
 .navigation a {
@@ -47,4 +48,27 @@ header .logo {
 .navigation a.active {
   background-color: #359381;
   color: #fff;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+#text {
+  position: absolute;
+  font-size: 8rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5    );
 }
