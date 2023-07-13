@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  background: linear-gradient(135deg, #124562, #1c99a2, #00ff93) fixed;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
