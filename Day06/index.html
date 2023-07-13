@@ -7,23 +7,54 @@
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
+    <h1>Tip Calculator</h1>
     <div class="container">
       <section>
-        <div class="wrapper">
+        <div class="wrapper lbl">
           <label for="bill" class="bill">Bill</label>
           <div class="input-box">
             <span>$</span>
-            <input type="number" value="0.00" name="val" id="bill" />
+            <input
+              type="number"
+              value="0.00"
+              name="val"
+              id="bill"
+              class="val"
+            />
           </div>
         </div>
         <div class="wrapper">
-            <span class="lbl">Tip</span>
-            <span id="tip-amount" class="val">$0</span>
+          <span class="lbl">Tip</span>
+          <span id="tip-amount" class="val">$0</span>
         </div>
-        <hr>
+        <hr />
         <div class="wrapper">
-            <span class="lbl">Total Amount</span>
-            <span id="total-amount" class="val">$0</span>
+          <span class="lbl">Total Amount</span>
+          <span id="total-amount" class="val">$0</span>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrapper">
+          <label for="tip" class="lbl">Tip %</label>
+          <span id="tip-percent" class="val">0</span>
+        </div>
+        <input type="range" min="1" id="tip" value="15" />
+        <div class="wrapper lbl">
+          <label for="no-of-people">Number of People</label>
+          <span id="split-num" class="val">0</span>
+        </div>
+        <input type="range" min="1" max="15" id="no-of-people" />
+      </section>
+
+      <section>
+        <div class="wrapper">
+          <span class="lbl">Tip Per Person</span>
+          <span id="tip-per-person" class="val">$0</span>
+        </div>
+        <div class="wrapper">
+            <span class="lbl">Total Per Person</span>
+            <span class="val" id="total-per-person">$0</span>
         </div>
       </section>
     </div>
