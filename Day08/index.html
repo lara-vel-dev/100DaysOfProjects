@@ -15,8 +15,10 @@
   </head>
   <body>
     <div class="container">
-      <h2>Generate a</h2>
-      <h2 class="secondary-text">Random Password</h2>
+      <div class="text">
+        <p>Generate a</p>
+        <p class="secondary-text"><u>Random Password</u></p>
+      </div>
       <div class="pswd">
         <input
           type="text"
@@ -24,11 +26,23 @@
           id="password"
           placeholder="Password"
         />
-        <i class="fa-regular fa-clipboard"></i>
+        <i class="fa-regular fa-clipboard" onclick="copyPassword()"></i>
       </div>
-      <button class="btn">
-        <i class="fa-sharp fa-solid fa-bolt"></i> Generate Password
-      </button>
+      <div class="footer">
+        <div class="length">
+          <label for="lenght"> Lenght: </label>
+          <select name="length" id="length" onchange="getLength()">
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <button class="btn" onclick="randomPassword()">
+          <i class="fa-sharp fa-solid fa-bolt"></i> Generate Password
+        </button>
+      </div>
     </div>
     <script src="./src/index.js"></script>
   </body>
