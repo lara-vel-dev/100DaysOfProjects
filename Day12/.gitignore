@@ -3,3 +3,5 @@ bin
 include
 lib
 pyvenv.cfg
+.idea
+
