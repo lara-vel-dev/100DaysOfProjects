@@ -4,3 +4,4 @@ pyvenv.cfg
 .DS_Store
 .env
 include
+.idea
