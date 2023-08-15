@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [clicked, setClicked] = useState(false);
+  const [position, setPosition] = useState({ x: 810, y: 415 });
+
+  const handleHover = () => {
+    const maxX = window.innerWidth - 100; // Ancho máximo de la ventana - ancho del botón
+    const maxY = window.innerHeight - 40; // Alto máximo de la ventana - alto del botón
+
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
+
+    setPosition({ x: randomX, y: randomY });
+  };
+
+  const handleMouseLeave = () => {};
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="text" style={clicked ? { display: "none" } : {}}>
+        <h1>Hola, me gustas mucho</h1>
+        <h2>¿Quieres ser mi chikistrikis?</h2>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div className="buttons" style={clicked ? { display: "none" } : {}}>
+        <button className="btn yes" onClick={() => setClicked(true)}>
+          Por su puesto bb ❤️
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <button
+          className="btn no"
+          style={{ left: `${position.x}px`, top: `${position.y}px` }}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        >
+          Ay no, eso si jamás ❌
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div className="img" style={clicked ? {} : { display: "none" }}>
+        <img
+          src="https://imgs.search.brave.com/4O2A0UcpW1pKmSwLQBiG_294aFYPSB4R9eh5UpCdgYI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzk4Lzkz/L2FiLzk4OTNhYmY5/NmRmYTI0ZTE4NTdk/NzJiZDcyZWIxOTJi/LmpwZw"
+          alt="crush image"
+        />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
