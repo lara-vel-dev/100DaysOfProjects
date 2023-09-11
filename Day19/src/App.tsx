@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function App() {
   const [clicked, setClicked] = useState(false);
-  const [position, setPosition] = useState({ x: 810, y: 415 });
+  const [position, setPosition] = useState({ x: 950, y: 515 });
 
   const handleHover = () => {
     const maxX = window.innerWidth - 100; // Ancho máximo de la ventana - ancho del botón

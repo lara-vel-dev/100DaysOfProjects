@@ -34,9 +34,10 @@ while True:
 
         for i in range(len(excel_file_df)):
             name = excel_file_df.loc[i, 'Nombre']
-            card_account = excel_file_df.loc[i, 'Terminación'].astype(str)
-            balance_due = excel_file_df.loc[i, 'Saldo Vencido'].astype(str)
-            phone = excel_file_df.loc[i, 'Teléfono'].astype(str)
+            card_account = excel_file_df.loc[i, 'Terminación']
+            
+            balance_due = excel_file_df.loc[i, 'Saldo Vencido']
+            phone = excel_file_df.loc[i, 'Teléfono']
 
             # Creates Message
             message = f"Estimado/a {name}, su tarjeta con terminación {card_account} presenta " \
