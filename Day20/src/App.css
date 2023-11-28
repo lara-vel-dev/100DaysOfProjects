@@ -10,8 +10,9 @@ html {
 }
 
 body {
-  background-color: #eac16fcd;
+  background-image: url('https://cdna.artstation.com/p/assets/images/images/019/494/342/large/daffa-arramy-templefinish.jpg?1563765945');
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
   font-size: 62.5%;
 }
-
-
