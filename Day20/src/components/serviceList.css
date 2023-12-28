@@ -1,10 +1,23 @@
 .list {
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #fff;
-    width: 150%;
-    padding: 7px;
+    width: 100%;
+    height: 90px;
     border-radius: 15px;
+    color: #000;
+}
+
+.list .service {
+    margin: 10px 25px;
+    font-weight: 600;
+}
+
+.list .price {
+    margin: 10px 0px;
+    font-weight: 500;
 }
 
 .list img {
@@ -26,5 +39,8 @@
     padding: 50px;
 }
 
-
-
+.list .btn {
+    background-color: #e31515;
+    width: 150px;
+    margin-bottom: 15px;
+}

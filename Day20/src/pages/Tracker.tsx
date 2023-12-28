@@ -5,7 +5,7 @@ const Tracker = () => {
   return (
     <div className="main">
       <div className="container">
-        <h3>SUBSCRIPTION TRACKER</h3>
+        <h3>SERVICE TRACKER</h3>
         <br />
         <FormTracker/>
       </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 import ServiceList from "./ServiceList";
 import PriceTracker from "./PriceTracker";
 import "../pages/tracker.css";
@@ -9,9 +10,8 @@ const FormTracker = () => {
   const [price, setPrice] = useState(0);
   const [title, setTitle] = useState("");
   const [serviceList, setServiceList] = useState([
-    { service: "", image: "", price: 0 },
+    { id: 0, service: "", image: "", price: 0 },
   ]);
-
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function getBudget(event: any) {
@@ -27,6 +27,8 @@ const FormTracker = () => {
   function handleSelect(event: any) {
     setTitle(event.target.value);
   }
+
+  const generateId = () => uuidv4();
 
   function handleAddElement(title: string) {
     let price = 0;
@@ -49,8 +51,13 @@ const FormTracker = () => {
     }
     setServiceList([
       ...serviceList,
-      { service: title, image: title, price: price },
+      { id: generateId(), service: title, image: title, price: price },
     ]);
+  }
+
+  function deleteService(id: number) {
+    const newList = serviceList.filter((item) => item.id != id);
+    setServiceList(newList);
   }
 
   const options = [
@@ -106,7 +113,6 @@ const FormTracker = () => {
         </div>
       ) : (
         <div className="content">
-          <p>ADD SUBSCRIPTION</p>
           <div className="main_containter">
             <PriceTracker
               budget={budget}
@@ -115,6 +121,7 @@ const FormTracker = () => {
             />
 
             <div className="content_tracker">
+              <p>ADD SERVICE</p>
               <form className="form">
                 <select
                   name="services"
@@ -132,15 +139,22 @@ const FormTracker = () => {
                   ))}
                 </select>
               </form>
-              <button disabled={budget - price < 7.99} onClick={() => handleAdd()}>ADD</button>
+              <button
+                disabled={budget - price < 7.99}
+                onClick={() => handleAdd()}
+              >
+                ADD
+              </button>
             </div>
           </div>
-          {serviceList.slice(1).map((service, index) => (
+          {serviceList.slice(1).map((service) => (
             <ServiceList
-              key={index}
+              key={service.id}
+              id={service.id}
               img={service.image}
               service={service.service}
               price={service.price}
+              deleteService={deleteService}
             />
           ))}
         </div>
