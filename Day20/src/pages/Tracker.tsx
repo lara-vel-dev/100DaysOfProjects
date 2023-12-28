@@ -1,21 +1,16 @@
-import { useState } from 'react';
-import './tracker.css';
+import FormTracker from "../components/FormTracker";
+import "./tracker.css";
 
 const Tracker = () => {
-    const [active, setActive] = useState(true);
-
-    return (
-        <div className="main">
-            <div className="container" style={!active ? {"display": "none"} : {}}>
-                <h3>SUBSCRIPTION TRACKER</h3>
-                <br />
-                <p>ADD BUDGET</p>
-                <input type="text" placeholder="$0.00"/>
-                <button onClick={() => setActive(!active)}>ADD</button>
-            </div>
-        </div>
-    )
-
-}
+  return (
+    <div className="main">
+      <div className="container">
+        <h3>SUBSCRIPTION TRACKER</h3>
+        <br />
+        <FormTracker/>
+      </div>
+    </div>
+  );
+};
 
 export default Tracker;

@@ -1,0 +1,30 @@
+.list {
+    margin-top: 20px;
+    display: flex;
+    background-color: #fff;
+    width: 150%;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.list img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.main_containter {
+    display: flex;
+}
+
+.price_container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(113, 212, 255, 0.5);
+    border-radius: 15px;
+    width: 280px;
+    padding: 50px;
+}
+
+
+
