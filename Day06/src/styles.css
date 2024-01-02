@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #cbcbcb;
+  height: 100vh;
+  background: linear-gradient(135deg, #124562, #1c99a2, #00ff93) fixed;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: #fff;
+  width: 450px;
+  padding: 50px 40px;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1 );
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.lbl{
+  font-size: 1.6rem;
+  color: #44475b;
+  font-weight: 400;
+}
+
+.val {
+    color: #44475b;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.input-box {
+  background-color: #ccfafd;
+  color: #124562;
+  padding: 5px;
+}
+
+#bill {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100px;
+  text-align: right;
+  color: #124562;
+}
+
+hr {
+  border:none;
+  border-bottom: 1px solid #ace1e5;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="range"]:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+section:last-child {
+  background-color: #ccfafd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+section:last-child .val,
+section:last-child .lbl {
+  color: #124562;
+}
+
+h1 {
+  position: relative;
+  top: 10%;
+  color: #fff;
+  text-align: center;
+}
