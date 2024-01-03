@@ -23,7 +23,7 @@
   transition: 0.2s;
 }
 
-.main ul li:hover:not(:nth-last-of-type(li)) {
+.main ul li:hover {
   font-size: 18px;
   color: #fdbe9b;
 }
@@ -44,6 +44,7 @@
   opacity: 0.8;
   letter-spacing: 1px;
   box-shadow: #023765 0px 7px 2px, #000 0px 8px 5px;
+  margin-left: 20px;
 }
 
 .main ul .btn:hover {

@@ -89,3 +89,16 @@ body {
 .login-form .container .form input::placeholder {
   color: #fff;
 }
+
+
+.main-auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;;
+}
+
+.main-auth img {
+  width: 450px;
+  margin-top: 50px;
+}

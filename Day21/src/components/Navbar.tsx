@@ -18,9 +18,9 @@ function Navbar(props: any) {
                         <li>Dashboard</li>
                     </Link>
                     {props.user ?
-                        <li onClick={props.logout} className='btn'>
+                        <button onClick={props.logout} className='btn'>
                             Logout
-                        </li>
+                        </button>
                         :
                         <li onClick={props.login} className='cursor-pointer font-medium bg-green-600 px-4 py-'>
                             

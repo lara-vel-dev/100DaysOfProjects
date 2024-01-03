@@ -9,7 +9,6 @@ import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Dashboard from "./pages/Dashboard";
 import Navbar from "./components/Navbar";
-import Unauthorized from "./components/Unauthorized";
 import "./App.css";
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
         <Navbar user={user} login={login} logout={logout} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/unauth" element={<Unauthorized />} />
           <Route
             path="/product"
             element={
@@ -65,7 +63,21 @@ function App() {
           </div>
         </div>
       ) : (
-        ""
+        <div
+          style={{
+            backgroundColor: "#262953",
+            height: "100vh",
+            color: "white",
+          }}
+
+          className="main-auth"
+        >
+          <h1>Welcome Back!</h1>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5619/5619967.png"
+            alt=""
+          />
+        </div>
       )}
     </>
   );
@@ -79,6 +91,6 @@ export const ProtectedRoute = (props: any) => {
   if (props.user) {
     return props.children;
   } else {
-    return <Navigate to="/unauth" replace={true} />;
+    return <Navigate to="/" replace={true} />;
   }
 };
