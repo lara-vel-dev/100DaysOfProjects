@@ -75,7 +75,7 @@ Each project is organized into a separate directory and contains the following:
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day18">Day 18: What Mango Type Are You?</a></p>
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day19">Day 19: I Like You App</a></p>
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day20">Day 20: Service Tracker</a></p>
-<p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day20">Day 21: Service Tracker</a></p>
+<p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day21">Day 21: Service Tracker</a></p>
 </details>
 
 
