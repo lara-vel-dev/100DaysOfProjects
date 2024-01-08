@@ -4,7 +4,9 @@
 
 <div>
   <h2>Project</h2>
-  <img src="./terminal.png" width="650px" align="center">
+  <div align="center">
+    <img src="./terminal.png" width="650px">
+  </div>
   <p>Terminal made with HTML and CSS that shows how to print hello world in JavaScript, Python, C# and Java.  </p>
 </div>
 
