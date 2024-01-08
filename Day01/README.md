@@ -15,6 +15,6 @@
 Technologies
 </h2>
   <div align="center">
-    <img src="https://skillicons.dev/icons?i=html,css&perline=12" width=410/>
+    <img src="https://skillicons.dev/icons?i=html,css&perline=12" width=210/>
   </div>
 </div>
