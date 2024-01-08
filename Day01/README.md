@@ -4,5 +4,5 @@
 
 <div>
   <h2>Project</h2>
-  
+  <img src="./terminal.png">
 </div>
