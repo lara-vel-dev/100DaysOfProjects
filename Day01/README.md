@@ -7,7 +7,7 @@
   <div align="center">
     <img src="./terminal.png" width="650px">
   </div>
-  <p>Terminal made with HTML and CSS that shows how to print hello world in JavaScript, Python, C# and Java.  </p>
+  <p>Terminal made with HTML and CSS that shows how to print "Hello World!" in JavaScript, Python, C# and Java. The main goal of this project is to provide a way of practicing HTML and CSS skills while familiarizing oneself with different programming languages. </p>
 </div>
 
 <div>
