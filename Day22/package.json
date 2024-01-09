@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^10.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
@@ -20,6 +22,7 @@
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.16",
+    "dotnet": "^1.1.4",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
