@@ -1,11 +1,15 @@
-function App() {
-
-  return (
-    <>
-     <h1>Hello World!</h1>
-    </>
-  )
+const style = {
+  appContainer: `max-w-[728px] mx-auto text-center`
 }
 
-export default App
+function App() {
+  return (
+    <div className={style.appContainer}>
+      <section className="flex flex-col h-[90vh] bg-gray-100 mt-10 shadow-xl border relative">
 
+      </section>
+    </div>
+  );
+}
+
+export default App;
