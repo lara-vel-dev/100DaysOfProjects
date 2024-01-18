@@ -8,6 +8,7 @@ const Navbar = () => {
     <>
       <nav className={styles.nav}>
         <h1 className={styles.heading}>Chat App</h1>
+        
       </nav>
     </>
   );
