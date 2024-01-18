@@ -13,14 +13,12 @@
 <h2>
 About this repo
 </h2>
-<div >
-<img align="right" src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" width="370"/>
-
-<p>
-Welcome to the 100 Days Of Projects! This repository contains a collection of diverse projects, each implemented using different technologies. 
+<div>
+<img align="right" src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" width="350"/>
+<p>Welcome to the 100 Days Of Projects! This repository contains a collection of diverse projects, each implemented using different technologies. 
 You'll find projects spanning various programming languages, frameworks, and tools. The primary goal of this is to expose you to different aspects 
-of software development, enabling you to enhance your coding abilities, problem-solving skills, and familiarity with multiple technologies.
-</p>
+of software development, enabling you to enhance your coding abilities, problem-solving skills, and familiarity with multiple technologies.</p>
+
 
 </div>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -75,7 +73,7 @@ Each project is organized into a separate directory and contains the following:
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day18">Day 18: What Mango Type Are You?</a></p>
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day19">Day 19: I Like You App</a></p>
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day20">Day 20: Service Tracker</a></p>
-<p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day21">Day 21: Service Tracker</a></p>
+<p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day21">Day 21: Protected Routes</a></p>
 </details>
 
 
