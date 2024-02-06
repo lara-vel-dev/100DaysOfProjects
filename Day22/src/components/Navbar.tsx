@@ -1,6 +1,7 @@
 import { auth } from "../services/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Signin from "./Signin";
+import Logout from "./Logout";
 
 const styles = {
   nav: `bg-gray-800 h-20 flex justify-between items-center p-4`,
@@ -9,11 +10,12 @@ const styles = {
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
+  console.log(user);
   return (
     <>
       <nav className={styles.nav}>
         <h1 className={styles.heading}>Chat App</h1>
-        <Signin/>
+        {user ? <Logout/> : <Signin/>}
       </nav>
     </>
   );
