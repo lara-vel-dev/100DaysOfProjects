@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+bin
+lib
+pyvenv.cfg
+config.py
+IMG_8891.JPG
+frame.png
+__pycache__/
+.idea
