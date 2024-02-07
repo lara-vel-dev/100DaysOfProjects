@@ -26,7 +26,7 @@ of software development, enabling you to enhance your coding abilities, problem-
 <h2>
 Technologies
 </h2>
-<div align="center"><img src="https://skillicons.dev/icons?i=html,css,js,ts,react,vite,python,flask&perline=12" width=810/></div>
+<div align="center"><img src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind,vite,firebase,python,flask&perline=12" width=810/></div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
