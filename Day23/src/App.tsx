@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -15,31 +15,31 @@ function App() {
     },
     {
       id: 2,
-      text: "Cineteca",
+      text: "Cinema",
       color: "#D899FF",
       angle: 30,
     },
     {
       id: 3,
-      text: "Cena en terraza",
+      text: "Romantic dinner",
       color: "#B399FF",
       angle: 60,
     },
     {
       id: 4,
-      text: "Noche de juegos",
+      text: "Games night",
       color: "#99C9FF",
       angle: 90,
     },
     {
       id: 5,
-      text: "Clase de baile",
+      text: "Dance class",
       color: "#FF99F0",
       angle: 120,
     },
     {
       id: 6,
-      text: "Pintar",
+      text: "Paint",
       color: "#D899FF",
       angle: 150,
     },
@@ -51,7 +51,7 @@ function App() {
     },
     {
       id: 8,
-      text: "Boliche",
+      text: "Bowling",
       color: "#99C9FF",
       angle: 210,
     },
@@ -63,19 +63,19 @@ function App() {
     },
     {
       id: 10,
-      text: "Museo",
+      text: "Museum",
       color: "#D899FF",
       angle: 270,
     },
     {
       id: 11,
-      text: "Mirador",
+      text: "Aquarium",
       color: "#B399FF",
       angle: 300,
     },
     {
       id: 12,
-      text: "Netflix and chill",
+      text: "Karaoke",
       color: "#99C9FF",
       angle: 330,
     },
