@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
-export const taskSlice = createSlice({
-  name: "tasks",
+export const artistSlice = createSlice({
+  name: "artists",
   initialState: [],
   reducers: {
 
   }
 });
 
-export default taskSlice.reducer
+export default artistSlice.reducer
