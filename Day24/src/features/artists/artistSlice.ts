@@ -1,12 +1,30 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = [
+  { id: 1, name: "Dua Lipa", recentAlbum: "Future Nostalgia", year: 2020 },
+  {
+    id: 2,
+    name: "MARINA",
+    recentAlbum: "Ancient Dreams In A Modern Land",
+    year: 2021,
+  },
+  {
+    id: 3,
+    name: "Ellie Goulding",
+    recentAlbum: "Higher Than Heaven",
+    year: 2023,
+  },
+];
 
 export const artistSlice = createSlice({
   name: "artists",
-  initialState: [],
+  initialState,
   reducers: {
-
-  }
+    addArtist: (state, action) => {
+      state.push(action.payload);
+    },
+  },
 });
 
-export default artistSlice.reducer
+export const { addArtist } = artistSlice.actions;
+export default artistSlice.reducer;

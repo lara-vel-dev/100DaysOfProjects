@@ -1,7 +1,18 @@
+import { useSelector } from "react-redux";
+
 const ArtistsList = () => {
+  const artists = useSelector((state) => state.artists);
+  console.log(artists)
+
   return (
     <>
-      <h1>List</h1>
+      {artists.map((artist) => (
+        <div key={artist.id}>
+          <h3>{artist.name}</h3>
+          <p>{artist.recentAlbum}</p>
+          <p>{artist.year}</p>
+        </div>
+      ))}
     </>
   );
 };
