@@ -23,8 +23,14 @@ export const artistSlice = createSlice({
     addArtist: (state, action) => {
       state.push(action.payload);
     },
+    deleteArtist: (state, action) => {
+      const taskFound = state.find((artist) => artist.id === action.payload);
+      if (taskFound) {
+        state.splice(state.indexOf(taskFound), 1);
+      }
+    },
   },
 });
 
-export const { addArtist } = artistSlice.actions;
+export const { addArtist, deleteArtist } = artistSlice.actions;
 export default artistSlice.reducer;

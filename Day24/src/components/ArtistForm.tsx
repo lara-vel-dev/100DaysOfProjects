@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { UseDispatch, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addArtist } from "../features/artists/artistSlice";
+import { v4 as uuid } from "uuid";
 
 const ArtistForm = () => {
   const [artist, setArtist] = useState({ name: "", recentAlbum: "", year: 0 });
@@ -16,8 +17,13 @@ const ArtistForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addArtist(artist));
-  }
+    dispatch(
+      addArtist({
+        ...artist,
+        id: uuid(),
+      })
+    );
+  };
 
   return (
     <form onSubmit={handleSubmit}>
