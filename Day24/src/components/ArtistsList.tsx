@@ -1,7 +1,7 @@
 const ArtistsList = () => {
   return (
     <>
-      <h1>Form</h1>
+      <h1>List</h1>
     </>
   );
 };
