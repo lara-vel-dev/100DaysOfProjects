@@ -26,7 +26,7 @@ of software development, enabling you to enhance your coding abilities, problem-
 <h2>
 Technologies
 </h2>
-<div align="center"><img src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind,vite,firebase,python,flask&perline=12" width=810/></div>
+<div align="center"><img src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind,vite,redux,firebase,python,flask&perline=12" width=810/></div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -76,7 +76,7 @@ Each project is organized into a separate directory and contains the following:
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day21">Day 21: Protected Routes</a></p>
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day22">Day 22: React Chat</a></p>
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day23">Day 23: Romantic Dates Roulette</a></p>
-<p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day24">Day 24: --- </a></p>
+<p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day24">Day 24: Artist CRUD</a></p>
 
 </details>
 
