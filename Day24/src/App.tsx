@@ -1,4 +1,3 @@
-import "./App.css";
 import ArtistForm from "./components/ArtistForm";
 import ArtistsList from "./components/ArtistsList";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -6,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="bg-zinc-900 h-screen text-white">
-      <div className="flex items-center justify-center h-full">
+      <div className="h-full items-center justify-center flex">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<ArtistsList />}></Route>

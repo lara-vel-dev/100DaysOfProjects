@@ -38,7 +38,6 @@ const ArtistForm = () => {
     if (params.id) {
       for (let i = 0; i < ar.length; i++) {
         if (ar[i].id == params.id) {
-          console.log("oa");
           setArtist({ ...ar[i] });
         }
       }
@@ -46,29 +45,35 @@ const ArtistForm = () => {
   }, [params, ar]);
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="bg-zinc-800 max-w-sm p-8">
+      <label className="block text-sm font-bold">Artist:</label>
       <input
+        className="w-full p-2 rounded-md bg-zinc-600 mb-2"
         name="name"
         type="text"
         value={artist.name}
-        placeholder="Artist"
+        placeholder="Name"
         onChange={handleChange}
       />
+      <label className="block text-sm font-bold">Recent Album:</label>
       <input
+        className="w-full p-2 rounded-md bg-zinc-600 mb-2"
         name="recentAlbum"
         type="text"
         value={artist.recentAlbum}
         placeholder="Album"
         onChange={handleChange}
       />
+      <label className="block text-sm font-bold">Year:</label>
       <input
+        className="w-full p-2 rounded-md bg-zinc-600 mb-2"
         name="year"
         type="text"
         value={artist.year}
         placeholder="Year"
         onChange={handleChange}
       />
-      <button>Save</button>
+      <button className="bg-indigo-600 px-2 py-1">Save</button>
     </form>
   );
 };
