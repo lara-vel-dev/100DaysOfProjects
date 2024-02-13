@@ -53,6 +53,7 @@ const ArtistForm = () => {
         type="text"
         value={artist.name}
         placeholder="Name"
+        autoComplete="off"
         onChange={handleChange}
       />
       <label className="block text-sm font-bold">Recent Album:</label>
@@ -62,6 +63,7 @@ const ArtistForm = () => {
         type="text"
         value={artist.recentAlbum}
         placeholder="Album"
+        autoComplete="off"
         onChange={handleChange}
       />
       <label className="block text-sm font-bold">Year:</label>
@@ -71,6 +73,7 @@ const ArtistForm = () => {
         type="text"
         value={artist.year}
         placeholder="Year"
+        autoComplete="off"
         onChange={handleChange}
       />
       <button className="bg-indigo-600 px-2 py-1">Save</button>
