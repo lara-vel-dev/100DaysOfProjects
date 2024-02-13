@@ -1,18 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
-  { id: 1, name: "Dua Lipa", recentAlbum: "Future Nostalgia", year: 2020 },
+  { id: "1", name: "Dua Lipa", recentAlbum: "Future Nostalgia", year: "2020" },
   {
-    id: 2,
+    id: "2",
     name: "MARINA",
     recentAlbum: "Ancient Dreams In A Modern Land",
-    year: 2021,
+    year: "2021",
   },
   {
-    id: 3,
+    id: "3",
     name: "Ellie Goulding",
     recentAlbum: "Higher Than Heaven",
-    year: 2023,
+    year: "2023",
   },
 ];
 
@@ -24,13 +24,22 @@ export const artistSlice = createSlice({
       state.push(action.payload);
     },
     deleteArtist: (state, action) => {
-      const taskFound = state.find((artist) => artist.id === action.payload);
-      if (taskFound) {
-        state.splice(state.indexOf(taskFound), 1);
+      const foundArtist = state.find((artist) => artist.id === action.payload);
+      if (foundArtist) {
+        state.splice(state.indexOf(foundArtist), 1);
+      }
+    },
+    updateArtist: (state, action) => {
+      const { id, name, recentAlbum, year } = action.payload;
+      const foundArtist = state.find((artist) => artist.id == id);
+      if (foundArtist) {
+        foundArtist.name = name;
+        foundArtist.recentAlbum = recentAlbum;
+        foundArtist.year = year;
       }
     },
   },
 });
 
-export const { addArtist, deleteArtist } = artistSlice.actions;
+export const { addArtist, deleteArtist, updateArtist } = artistSlice.actions;
 export default artistSlice.reducer;
