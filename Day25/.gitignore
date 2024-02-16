@@ -5,3 +5,6 @@ Temp
 UserSettings
 Day25.sln
 .DS_Store
+.vs/
+Assembly-CSharp.csproj
+obj/
