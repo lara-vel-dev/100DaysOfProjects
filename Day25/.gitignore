@@ -1,0 +1,10 @@
+.vs
+Library
+Logs
+obj
+Packages
+ProjectSettings
+Temp
+UserSettings
+Assembly-CSharp.csproj
+Day25.snl
