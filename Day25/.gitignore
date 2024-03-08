@@ -1,0 +1,15 @@
+.vs
+Day25_BurstDebugInformation_DoNotShip
+Day25.app
+Library
+Logs
+obj
+UserSettings
+Assembly-CSharp.csproj
+Day25.sln
+Assets/TextMesh Pro
+Assets/Audio.meta 
+Assets/Prefab.meta 
+Assets/Scenes.meta 
+Assets/Sprites.meta 
+Assets/TextMesh Pro.meta 
