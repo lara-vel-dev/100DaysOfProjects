@@ -85,6 +85,7 @@ Each project is organized into a separate directory and contains the following:
   <br>
 
 <p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day25">Day 25: Dog of Wisdom Endless</a></p>
+<p>🦁 <a href="https://github.com/lara-vel-dev/100DaysOfProjects/tree/main/Day26">Day 26: Dino Chrome Clone</a></p>
 
 </details>
 
